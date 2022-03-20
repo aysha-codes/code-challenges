@@ -7,5 +7,9 @@
 // -34: 34
 
 function opposite(number) {
-    //your code here
+    if (number === 0) {
+        return 0
+      } else if (Math.sign(number)) {
+        return -number
+      }
   }
