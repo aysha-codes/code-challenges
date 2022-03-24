@@ -4,5 +4,9 @@
 // repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 
 function repeatStr (n, s) {
-    return '';
+    let repeatStr = '';
+    for (let i = 0; i < n; i++) {
+      repeatStr = repeatStr + s;
+    }
+    return repeatStr;
   }
