@@ -9,6 +9,8 @@
 
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-        
+      let smallest = args[0]
+      args.forEach(e => e > smallest ? null : smallest = e)
+      return smallest
     }
-}
+  }
