@@ -3,5 +3,9 @@
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 function squareSum(numbers){
-
-}
+    let sum = numbers[0]
+    for (const value of numbers) {
+      sum *= value;
+    }
+    return sum
+  }
