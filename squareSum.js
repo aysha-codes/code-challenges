@@ -5,7 +5,7 @@
 function squareSum(numbers){
     let sum = numbers[0]
     for (const value of numbers) {
-      sum *= value;
+      sum += value * value;
     }
     return sum
   }
