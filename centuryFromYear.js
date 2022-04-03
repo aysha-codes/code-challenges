@@ -11,10 +11,5 @@
 // 1601 --> 17
 // 2000 --> 20
 
-function century(year) {
-    if (year.toString().slice(-2) === "00"){
-      return Number(year.toString().slice(0,-2))
-    }else {
-      return Number(year.toString().slice(0,-2))+1
-    }
-  }
+const century = year => Math.ceil(year/100)
+//using ceiling method to round up to nearest century (100)
