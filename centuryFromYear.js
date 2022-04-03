@@ -12,6 +12,9 @@
 // 2000 --> 20
 
 function century(year) {
-    // Finish this :)
-    return;
+    if (year.toString().slice(-2) === "00"){
+      return Number(year.toString().slice(0,-2))
+    }else {
+      return Number(year.toString().slice(0,-2))+1
+    }
   }
