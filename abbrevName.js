@@ -9,5 +9,5 @@
 // patrick feeney => P.F
 
 function abbrevName(name){
-    // code away
-}
+    return `${name.split(" ").map((i) => i[0]).join('.').trim()}.`
+  }
