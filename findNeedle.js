@@ -11,5 +11,5 @@
 // should return "found the needle at position 5" (in COBOL "found the needle at position 6")
 
 function findNeedle(haystack) {
-    return `found the needle at position ${haystack.find(e => e === 'needle')}`
+    return `found the needle at position ${haystack.indexOf('needle')}`
   }
