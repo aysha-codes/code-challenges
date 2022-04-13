@@ -15,6 +15,5 @@
 // 0 <= s <= 59
 
 function past(h, m, s){
-    // Happy Coding! :)
-    return ;
+    return (h * 60 * 60 * 1000) + (m * 60 * 1000) + (s * 1000);
   }
