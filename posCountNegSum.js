@@ -8,7 +8,7 @@
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
 function countPositivesSumNegatives(input) {
-    if (input === null || input === []) {
+    if (input === null || input.length === 0) {
       return []
     } else {
         const posItems = []
@@ -30,13 +30,3 @@ function countPositivesSumNegatives(input) {
       return finalArr;
     }
   }
-
-// Pseudo Code
-// Iterate over the array, make two new arrays
-// > One with all the positive numbers
-// > one with all the negative numbers
-// - For the positive array, get length; will be count
-// - for the negative array, sum elements
-// - Return both in a new array
-// Need to account for null and 0 arrays
-// Nest an if loop maybe?
