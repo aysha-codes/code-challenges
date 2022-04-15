@@ -2,5 +2,7 @@
 // Note: input will never be an empty string
 
 function fakeBin(x){
-
-}
+    let zero = /[0-4]+/gm
+    let one = /[5-9]+/gm
+    return x.replace(zero,0).replace(one,1);
+  }
