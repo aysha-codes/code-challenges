@@ -3,6 +3,5 @@
 // Return True if yes, False otherwise :)
 
 function hero(bullets, dragons){
-    let survive = bullets >= dragons*2 ? true : false;
-    return survive
+    return bullets >= dragons * 2
   }
