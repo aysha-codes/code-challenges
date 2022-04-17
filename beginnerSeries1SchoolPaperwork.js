@@ -7,5 +7,6 @@
 // n=-5, m=5:  0
 
 function paperwork(n, m) {
-    return (Math.sign(n) === -1 || Math.sign(m) === -1) ? 0 : n*m;
+    return n > 0 && m > 0 ? n * m : 0
   }
+  // Checks if n or m are both greater than 0, then returns them multiplied if so and 0 if not.
