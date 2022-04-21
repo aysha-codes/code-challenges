@@ -2,13 +2,5 @@
 
 // Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 function lovefunc(flower1, flower2){
-    let one = (flower1 % 2 === 0 ? "Even" : "Odd")
-    let two = (flower2 % 2 === 0 ? "Even" : "Odd")
-    if (one === "Even" && two === "Odd"){
-      return true
-    } else if (one === "Odd" && two === "Even") {
-      return true
-    } else {
-      return false
-    }
+    return flower1 % 2 !== flower2 % 2;
   }
