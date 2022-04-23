@@ -7,6 +7,9 @@
 // name + " does not play banjo"
 // Names given are always valid strings.
 function areYouPlayingBanjo(name) {
-    // Implement me
-    return name;
+    if (name[0] === "R" || name[0] === "r") {
+      return name + " plays banjo"
+    } else {
+      return name + " does not play banjo";
+    }
   }
