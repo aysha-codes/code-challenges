@@ -9,10 +9,10 @@
 // You may consider that there will not be any empty arrays/vectors.
 var min = function(list){
     
-    return list[0];
+    return list.sort((a, b) => a - b)[0];
 }
 
 var max = function(list){
     
-    return list[0];
+    return list.sort((a, b) => a - b)[list.length-1];
 }
