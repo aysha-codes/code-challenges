@@ -4,5 +4,5 @@
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 function smash (words) {
-    return (words.length === 0 ? "" : words.toString().replace(/,/g,' '));
- };
+    return words.join(" ");
+};
