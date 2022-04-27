@@ -12,14 +12,6 @@
 // there are 10 matches in the championship
 // 0 <= x <= 4
 // 0 <= y <= 4
-function points(games) {
-    let score = 0;
-    games.map(game => {
-        if (game[0] === game[2]) {
-        score += 1;
-        } else if (game[0] > game[2]) {
-        score += 3;
-        }
-    });
-    return score;
-}
+const points=games=>games.reduce((output,current)=>{
+    return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+  },0)
