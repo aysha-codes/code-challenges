@@ -12,5 +12,5 @@
 // (4, 1, 4)     ->  true
 // (15, -5, 3)   ->  true
 function isDivideBy(number, a, b) {
-    // good luck
+    return (number%a===0 && number%b===0) ? true : false;
   }
