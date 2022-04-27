@@ -13,5 +13,16 @@
 // 0 <= x <= 4
 // 0 <= y <= 4
 function points(games) {
-    // your code here
-}
+    const map = games.map(points => points.split(':'))
+    let score = 0
+    for (let i = 0; i < 10; i++) {
+      if(map[i][0] > map[i][1]) {
+        score += 3;
+      } else if(map[i][0] < map[i][1]) {
+        score += 0;
+      } else if(map[i][0] = map[i][1]) {
+        score += 1;
+      }
+    }
+    return score;
+  }
