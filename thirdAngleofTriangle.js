@@ -4,5 +4,5 @@
 
 // Note: only positive integers will be tested.
 function otherAngle(a, b) {
-    return 0;
+    return 180 - Number(a + b);
   }
