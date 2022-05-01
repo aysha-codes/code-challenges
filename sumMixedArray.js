@@ -2,5 +2,5 @@
 
 // Return your answer as a number.
 function sumMix(x){
-
-}
+    return x.length === 0 ? 0 : x.reduce((acc, ind) => Number(acc) + Number(ind), 0)
+  }
