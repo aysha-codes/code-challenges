@@ -12,5 +12,14 @@
 
 // If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 function sumArray(array) {
-
-}
+    if (array === null || array === [ ] || array === undefined){
+      return 0;
+    } else if (array.length === 1){
+      return 0;
+    } else {
+      const sortedArr = array.sort((a, b) => a - b);
+      sortedArr.pop()
+      sortedArr.shift()
+      return sortedArr.reduce((acc, ind)=> acc + ind, 0)
+    }
+  }
