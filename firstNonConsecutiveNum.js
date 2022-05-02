@@ -11,26 +11,9 @@
 // If you like this Kata, maybe try this one next: https://www.codewars.com/kata/represent-array-of-numbers-as-ranges
 
 // 1 Can you write a solution that will return null2 for both [] and [ x ] though? (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )
-function firstNonConsecutive (arr) {
-    // Set the first number for the consecutive count from arr[0]
-    // Run a loop to increment the count and ensure each subsequent loop matches +1
-    // Break loop if it doesn't, return the non-conseq num
-    // Return null if it is all conseq
-    
-    // Can't trust that the break will be at the end
-    // Need an if switch, maybe nested?
-    // Is there a simpler way?
-    let i = 0;
-    let n = arr[0];
-    while (i <= arr.length){
-      if (n === arr[i]){
-        n++
-        i++
-      } else if (n !== arr[i]){
-        return arr[i];
-        i = arr.length
-      } else {
-        return null;
-      }
-    }
+function firstNonConsecutive(arr) {
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i - 1] + 1 !== arr[i]) return arr[i];
   }
+  return null;
+}
