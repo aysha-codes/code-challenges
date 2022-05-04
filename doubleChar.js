@@ -6,6 +6,8 @@
 // * "1234!_ "     -> "11223344!!__  "
 // Good Luck!
 function doubleChar(str) {
-    // Your code here
+    let newStr = '';
+    const arr = str.split('');
+    arr.forEach(e => newStr = newStr + e + e)
+    return newStr
   }
-  
