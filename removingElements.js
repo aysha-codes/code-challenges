@@ -6,5 +6,7 @@
 
 // None of the arrays will be empty, so you don't have to worry about that!
 function removeEveryOther(arr){
-    //your code here
+    altArr = []
+    arr.forEach((e, i) => (i % 2 === 0) ? altArr.push(e) : null)
+    return altArr;
 }
