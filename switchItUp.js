@@ -20,3 +20,4 @@ function switchItUp(number){
     }
     return nums[number];
   }
+  
