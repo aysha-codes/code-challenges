@@ -5,6 +5,7 @@ function createArray(number){
     
     for(var counter = 1; counter <= number;){
       newArray.push(counter);
+      counter++
     }
     
     return newArray;
