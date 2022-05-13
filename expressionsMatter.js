@@ -30,15 +30,5 @@
 // Explanation:
 // After placing signs and brackets, the Maximum value obtained from the expression is 9 * (1+1) = 18.
 function expressionMatter(a, b, c) {
-    let sum = a+b+c;
-    let product = a*b*c;
-    let mixed1 = a+b*c;
-    let mixed2 = a*b+c;
-    let mixed3 = (a+b)*c;
-    let mixed4 = a*(b+c);
-    let array = [sum,product,mixed1,mixed2,mixed3,mixed4]
-    const sortedArr = array.sort((a, b) => a - b);
-    console.log(array)
-    console.log(sortedArr)
-    return sortedArr[sortedArr.length-1];
+    return Math.max( a + b + c, (a + b) * c, a * (b + c), a * b * c )
 }
