@@ -8,7 +8,6 @@
 // O is misinterpreted as 0
 // I is misinterpreted as 1
 // The test cases contain numbers only by mistake.
-function correct(string)
-{
-	// your code here
+function correct(string){
+	return string.split('').map(a => (a === "5" ? "S" : (a === "0" ? "O" : (a === "1" ? "I" : a)))).join('');
 }
