@@ -6,5 +6,5 @@
 
 // If you can, try writing it in one line of code.
 function findDifference(a, b) {
-    //loading...
+    return Math.abs(a.reduce((p, c) => p * c) - b.reduce((p, c) => p * c));
 }
