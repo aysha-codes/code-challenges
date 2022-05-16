@@ -4,5 +4,6 @@
 
 // You should not remove or add elements from/to the array.
 function twoSort(s) {
-    
+    s = s.sort();
+    return s[0].split('').map(a => a = a + "***").join('').slice(0,-3);
 }
