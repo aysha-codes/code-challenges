@@ -9,5 +9,10 @@
 // I is misinterpreted as 1
 // The test cases contain numbers only by mistake.
 function correct(string){
-	return string.split('').map(a => (a === "5" ? "S" : (a === "0" ? "O" : (a === "1" ? "I" : a)))).join('');
-}
+    const corrections = {
+      '5': 'S',
+      '0': 'O',
+      '1': 'I',
+    };
+    return string.replace(/[501]/g, character => corrections[character]);
+}    
