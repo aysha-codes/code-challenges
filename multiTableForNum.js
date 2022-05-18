@@ -17,5 +17,10 @@
 
 // Note: newlines should be added between rows, but there should be no trailing newline at the end. If you're unsure about the format, look at the sample tests.
 function multiTable(number) {
-    // good luck
+    let table = "";
+    for(let i=1; i < 11; i++){
+      table += `${i} * ${number} = ${number * i}\n`
+    }
+    let trimTable = table.slice(0,-1);
+    return trimTable;
 }
