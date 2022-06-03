@@ -9,5 +9,7 @@
 // * With `name` not given 
 //   or `name` = ""        => return "Hello, World!"
 function hello(name) {
-    return '';
+    return `Hello, ${
+        name ? name[0].toUpperCase() + name.slice(1).toLowerCase() : "World"
+    }!`;
 };
